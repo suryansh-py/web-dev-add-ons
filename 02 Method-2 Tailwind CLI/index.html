@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tailwind CLI Method</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <h2 class="bg-green-500 text-white"> We are working with v4.1 of Tailwind CSS</h2>
+    <p> 
+        <!-- Navigate to Project folder & write this in terminal -->
+        1. npm install tailwindcss @tailwindcss/cli
+
+        <!--Now add this to main CSS file  -->
+        2. @import "tailwindcss";
+        
+        <!-- Start the Tailwind CLI build process , Run the CLI tool to scan your source files for classes and build your CSS. -->
+        3. npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
+        
+        <!-- Start using Tailwind in your HTML , Add your compiled CSS file to the <head> and start using Tailwind’s utility classes to style your content. -->
+        4. link href="./output.css" rel="stylesheet">
+        <!-- (Add < in the beginning) -->
+        </p>
+<p>
+    We can install a extension "Tailwind CSS IntelliSense"
+    <!-- # Bug Fix
+    (Sometimes the changes might not reflect on Browser, then do this) -->
+    npx @tailwindcss/cli -i ./input.css -o ./output.css --watch --content ./index.html
+
+    <!-- # Single build command for all HTML files
+    From project root, run: -->
+    npx @tailwindcss/cli -i ./input.css -o ./output.css --watch --content "./**/*.html"
+
+
+</p>
+</body>
+</html>
