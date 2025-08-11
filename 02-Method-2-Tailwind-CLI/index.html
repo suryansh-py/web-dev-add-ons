@@ -26,9 +26,10 @@
     (Sometimes the changes might not reflect on Browser, then do this) -->
     npx @tailwindcss/cli -i ./input.css -o ./output.css --watch --content ./index.html
 
-    <!-- # Single build command for all HTML files
+    <!-- # Single build command for all HTML files (for v4.1)
     From project root, run: -->
-    npx @tailwindcss/cli -i ./input.css -o ./output.css --watch --content "./**/*.html"
+    npx tailwindcss -i ./input.css -o ./output.css --watch --content ../**/*.html       
+
 
 
 </p>
